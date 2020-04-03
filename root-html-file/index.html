@@ -33,7 +33,7 @@
             return System.import('footer');
           },
           function (location) {
-            return location.pathname.startsWith('/my-first-app');
+            //return location.pathname.startsWith('/my-first-app');
             return true;
           }
         );
@@ -43,6 +43,9 @@
         singleSpa.start();
       })
     </script>
-    <import-map-overrides-full></import-map-overrides-full>
+    
+    <router-outlet>
+
+    </router-outlet>
   </body>
 </html>
